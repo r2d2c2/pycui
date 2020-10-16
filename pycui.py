@@ -62,10 +62,11 @@ def start():
     elif(inp == '4'):
         os.system('pinout')
     elif(inp=='5'):
-        os.system('sudo apt upgrade -y')
         os.system('sudo apt update -y')
-        os.system('sudo apt-get upgrade -y')
+        os.system('sudo apt upgrade -y')
         os.system('sudo apt-get update -y')
+        os.system('sudo apt-get upgrade -y')
+        os.system('sudo rpi-update -y')#펌웨어 업데이트
     elif(inp=='6'):
         os.system('sudo apt-get install w3m -y')
         os.system('w3m google.co.kr')
