@@ -48,8 +48,9 @@ def start():
     5.업데이트
     6.웹 브라우저 
     7.사용자 관리
-    8.﻿라즈베리파이 관리
+    8.라즈베리파이 관리
     9.초기 환경 설정
+    10.한글 설정
     입력해주세요>''')
     if (inp == '1'):
         os.system('vcgencmd measure_temp')
@@ -78,6 +79,10 @@ def start():
         #os.system('chmod +x pycui.py')#실행 파일로 변경
         os.system('sudo cp pycui /usr/local/bin/')
         #os.system('sudo mv /usr/local/bin/pycui.py /usr/local/bin/pycui')
+    elif(inp=='10'):
+        os.system('sudo apt-get install ibus')
+        os.system('sudo apt-get install ibus-hangul')
+        os.system('sudo apt-get install fonts-unfonts-core')
     else:
         print("잘못 입력 하였습니다.")
     start()
